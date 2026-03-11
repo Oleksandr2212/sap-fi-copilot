@@ -1,0 +1,2 @@
+# sap-fi-copilot
+financial

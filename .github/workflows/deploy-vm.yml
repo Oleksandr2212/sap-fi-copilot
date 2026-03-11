@@ -1,0 +1,52 @@
+name: Deploy Backend To VM
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "backend/**"
+      - ".github/workflows/deploy-vm.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pack backend
+        run: |
+          tar \
+            --exclude='backend/.venv' \
+            --exclude='backend/__pycache__' \
+            --exclude='backend/.DS_Store' \
+            --exclude='backend/._*' \
+            -czf backend.tar.gz backend
+
+      - name: Upload backend artifact to VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          source: "backend.tar.gz"
+          target: "/tmp"
+
+      - name: Deploy on VM
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          script_stop: true
+          command_timeout: 30m
+          script: |
+            set -euo pipefail
+            mkdir -p /tmp/sap-fi-copilot-deploy
+            rm -rf /tmp/sap-fi-copilot-deploy/backend
+            tar -xzf /tmp/backend.tar.gz -C /tmp/sap-fi-copilot-deploy
+            chmod +x /tmp/sap-fi-copilot-deploy/backend/deploy/vm/*.sh
+            /tmp/sap-fi-copilot-deploy/backend/deploy/vm/deploy_vm.sh /tmp/sap-fi-copilot-deploy/backend
+            curl -fsS http://127.0.0.1:8000/telegram/health

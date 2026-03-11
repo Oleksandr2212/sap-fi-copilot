@@ -1,0 +1,1393 @@
+[
+  {
+    "tcode": "FB02",
+    "name": "Зміна бухгалтерського документа",
+    "description": "Дозволяє змінити окремі поля вже проведеного FI документа (залежно від налаштувань).",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FB02",
+      "Вкажіть номер документа, рік і company code",
+      "Змініть дозволені поля",
+      "Збережіть зміни"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FB03",
+    "name": "Перегляд бухгалтерського документа",
+    "description": "Перегляд проведеного FI документа без можливості редагування.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FB03",
+      "Введіть номер документа",
+      "Перевірте заголовок і позиції",
+      "За потреби відкрийте flow документа"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FB05",
+    "name": "Постинг із очищенням",
+    "description": "Виконує проводку та одночасно очищення відкритих позицій.",
+    "module": "GL/AP/AR",
+    "steps": [
+      "Відкрийте FB05",
+      "Вкажіть рахунок і параметри документа",
+      "Оберіть відкриті позиції",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FB08",
+    "name": "Сторнування документа",
+    "description": "Сторнує раніше проведений бухгалтерський документ.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FB08",
+      "Вкажіть номер документа",
+      "Заповніть дату сторно і причину",
+      "Підтвердіть сторнування"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBRA",
+    "name": "Скидання очищення",
+    "description": "Скасовує очищення та за потреби виконує сторнування очищувального документа.",
+    "module": "AP/AR",
+    "steps": [
+      "Відкрийте FBRA",
+      "Вкажіть очищувальний документ",
+      "Оберіть режим reset/ reset+reverse",
+      "Виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F-03",
+    "name": "Очищення GL-рахунку",
+    "description": "Ручне очищення відкритих позицій у Головній книзі.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте F-03",
+      "Виберіть GL-рахунок",
+      "Оберіть позиції для очищення",
+      "Проведіть очищення"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-04",
+    "name": "Проведення з очищенням GL",
+    "description": "Виконує проводку по GL із одночасним очищенням відкритих позицій.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте F-04",
+      "Введіть параметри документа",
+      "Оберіть позиції для очищення",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-22",
+    "name": "Вхідний рахунок клієнта",
+    "description": "Створення дебіторського рахунку (customer invoice) у класичному інтерфейсі.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте F-22",
+      "Вкажіть клієнта і дату",
+      "Заповніть суму і рахунок доходу",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-29",
+    "name": "Аванс від клієнта",
+    "description": "Проведення авансового платежу від клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте F-29",
+      "Введіть клієнта",
+      "Вкажіть суму авансу",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-30",
+    "name": "Очищення клієнта з проводкою",
+    "description": "Проводка по клієнту з одночасним очищенням відкритих позицій.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте F-30",
+      "Вкажіть клієнта",
+      "Оберіть позиції до очищення",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-43",
+    "name": "Рахунок постачальника (класичний)",
+    "description": "Класичне введення рахунку постачальника в AP.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте F-43",
+      "Вкажіть постачальника",
+      "Заповніть суму і податок",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-47",
+    "name": "Запит авансу постачальнику",
+    "description": "Створення special G/L запиту на авансовий платіж постачальнику.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте F-47",
+      "Вкажіть постачальника",
+      "Введіть суму запиту",
+      "Збережіть документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F-48",
+    "name": "Аванс постачальнику",
+    "description": "Проведення авансового платежу постачальнику.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте F-48",
+      "Вкажіть постачальника",
+      "Заповніть суму і банк",
+      "Проведіть документ"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-54",
+    "name": "Очищення авансу постачальнику",
+    "description": "Зарахування авансу постачальнику проти рахунку.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте F-54",
+      "Виберіть рахунок та аванс",
+      "Перевірте різницю",
+      "Проведіть очищення"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-58",
+    "name": "Платіж з друком чека",
+    "description": "Ручний платіж постачальнику з підтримкою чекового процесу.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте F-58",
+      "Вкажіть платіжні параметри",
+      "Оберіть позиції",
+      "Проведіть і надрукуйте чек"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBZP",
+    "name": "Налаштування автоматичних платежів",
+    "description": "Customizing для Automatic Payment Program (F110).",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте FBZP",
+      "Налаштуйте company code",
+      "Налаштуйте payment methods і банки",
+      "Збережіть параметри"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBN1",
+    "name": "Діапазони номерів документів",
+    "description": "Підтримка номерних діапазонів для FI документів.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте FBN1",
+      "Виберіть company code",
+      "Створіть або змініть інтервал",
+      "Збережіть зміни"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FS10N",
+    "name": "Сальдо GL-рахунку",
+    "description": "Перегляд сальдо та оборотів GL-рахунку по періодах.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FS10N",
+      "Введіть GL-рахунок і company code",
+      "Оберіть фінансовий рік",
+      "Перегляньте сальдо"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBL3N",
+    "name": "Позиції GL-рахунку",
+    "description": "Список проведень по GL-рахунку з фільтрами періоду і статусу.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FBL3N",
+      "Вкажіть GL-рахунок",
+      "Задайте company code і період",
+      "Натисніть Execute"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FAGLL03",
+    "name": "Перегляд позицій New GL",
+    "description": "Перегляд позицій у New General Ledger з розширеними полями.",
+    "module": "New GL",
+    "steps": [
+      "Відкрийте FAGLL03",
+      "Введіть GL-рахунок",
+      "Задайте відбір",
+      "Перегляньте позиції"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FK01",
+    "name": "Створення постачальника",
+    "description": "Створення master data постачальника в AP.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FK01",
+      "Заповніть загальні дані",
+      "Заповніть company code data",
+      "Збережіть постачальника"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FK02",
+    "name": "Зміна постачальника",
+    "description": "Редагування master data постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FK02",
+      "Вкажіть постачальника",
+      "Змініть потрібні поля",
+      "Збережіть зміни"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FK03",
+    "name": "Перегляд постачальника",
+    "description": "Перегляд master data постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FK03",
+      "Вкажіть постачальника",
+      "Оберіть company code",
+      "Перегляньте дані"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FD01",
+    "name": "Створення клієнта",
+    "description": "Створення master data клієнта в AR.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FD01",
+      "Заповніть загальні дані",
+      "Заповніть company code і sales дані",
+      "Збережіть клієнта"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FD02",
+    "name": "Зміна клієнта",
+    "description": "Редагування master data клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FD02",
+      "Вкажіть клієнта",
+      "Оновіть потрібні поля",
+      "Збережіть зміни"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FD03",
+    "name": "Перегляд клієнта",
+    "description": "Перегляд master data клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FD03",
+      "Вкажіть клієнта",
+      "Оберіть company code",
+      "Перегляньте реквізити"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "FK10N",
+    "name": "Баланс постачальника",
+    "description": "Перегляд балансів і оборотів постачальника за період.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FK10N",
+      "Вкажіть постачальника",
+      "Виберіть company code і рік",
+      "Перегляньте баланс"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FD10N",
+    "name": "Баланс клієнта",
+    "description": "Перегляд балансів і оборотів клієнта за період.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FD10N",
+      "Вкажіть клієнта",
+      "Виберіть company code і рік",
+      "Перегляньте баланс"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FV60",
+    "name": "Паркування рахунку постачальника",
+    "description": "Паркування (park) вхідного рахунку постачальника без фінального проведення.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FV60",
+      "Заповніть дані рахунку",
+      "Перевірте позиції",
+      "Збережіть як parked"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FV65",
+    "name": "Паркування кредит-ноти постачальника",
+    "description": "Паркування кредит-ноти постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте FV65",
+      "Введіть дані кредит-ноти",
+      "Перевірте документ",
+      "Збережіть parked документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FV70",
+    "name": "Паркування рахунку клієнта",
+    "description": "Паркування дебіторського рахунку без фінального постингу.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FV70",
+      "Введіть дані клієнта",
+      "Заповніть суми",
+      "Збережіть parked документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FV75",
+    "name": "Паркування кредит-ноти клієнта",
+    "description": "Паркування кредит-ноти клієнта до остаточного проведення.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте FV75",
+      "Введіть дані кредит-ноти",
+      "Перевірте позиції",
+      "Збережіть parked документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBV0",
+    "name": "Проведення parked документа",
+    "description": "Фінальне проведення раніше припаркованого документа.",
+    "module": "GL/AP/AR",
+    "steps": [
+      "Відкрийте FBV0",
+      "Вкажіть номер parked документа",
+      "Перевірте дані",
+      "Проведіть документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBV1",
+    "name": "Паркування бухгалтерського документа",
+    "description": "Створення parked FI документа для подальшого погодження.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FBV1",
+      "Заповніть заголовок і позиції",
+      "Перевірте баланс",
+      "Збережіть parked документ"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBV2",
+    "name": "Зміна parked документа",
+    "description": "Редагування документа, що знаходиться у статусі park.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FBV2",
+      "Вкажіть номер документа",
+      "Оновіть поля",
+      "Збережіть зміни"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBV3",
+    "name": "Перегляд parked документа",
+    "description": "Перегляд припаркованого документа перед фінальним постингом.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте FBV3",
+      "Введіть номер parked документа",
+      "Перегляньте заголовок і позиції",
+      "Перевірте статус"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F.01",
+    "name": "Фінансова звітність",
+    "description": "Генерація фінансових звітів за заданою версією звітності.",
+    "module": "Фінансова звітність",
+    "steps": [
+      "Відкрийте F.01",
+      "Оберіть версію фінзвітності",
+      "Задайте період",
+      "Виконайте звіт"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F.05",
+    "name": "Переоцінка в іноземній валюті",
+    "description": "Переоцінка відкритих позицій і балансних рахунків у валюті на кінець періоду.",
+    "module": "Закриття періоду",
+    "steps": [
+      "Відкрийте F.05",
+      "Вкажіть company code і дату оцінки",
+      "Запустіть тест",
+      "Запустіть продуктивно"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F.07",
+    "name": "Carryforward кредиторів",
+    "description": "Перенесення сальдо кредиторської заборгованості на новий фінансовий рік.",
+    "module": "Закриття року",
+    "steps": [
+      "Відкрийте F.07",
+      "Вкажіть company code",
+      "Задайте фінансовий рік",
+      "Виконайте carryforward"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F.08",
+    "name": "Carryforward дебіторів",
+    "description": "Перенесення сальдо дебіторської заборгованості на новий фінансовий рік.",
+    "module": "Закриття року",
+    "steps": [
+      "Відкрийте F.08",
+      "Вкажіть company code",
+      "Задайте рік перенесення",
+      "Запустіть carryforward"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F.16",
+    "name": "Carryforward Головної книги",
+    "description": "Перенесення сальдо GL-рахунків на новий фінансовий рік.",
+    "module": "Закриття року",
+    "steps": [
+      "Відкрийте F.16",
+      "Виберіть company code",
+      "Вкажіть фінансовий рік",
+      "Виконайте перенесення"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F.80",
+    "name": "Масове сторнування документів",
+    "description": "Масове сторнування групи FI документів за критеріями відбору.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте F.80",
+      "Задайте критерії відбору",
+      "Перевірте список документів",
+      "Виконайте сторнування"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F.81",
+    "name": "Масове сторнування по введених номерах",
+    "description": "Сторнування декількох документів за заздалегідь підготовленим списком.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте F.81",
+      "Завантажте або введіть список документів",
+      "Перевірте параметри сторно",
+      "Запустіть обробку"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F150",
+    "name": "Програма нагадувань",
+    "description": "Автоматизоване формування нагадувань клієнтам про прострочену заборгованість.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте F150",
+      "Налаштуйте параметри dunning run",
+      "Запустіть proposal",
+      "Сформуйте та надішліть листи"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OB08",
+    "name": "Курси валют",
+    "description": "Підтримка курсів обміну валют для валютних операцій.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OB08",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBA7",
+    "name": "Типи документів",
+    "description": "Налаштування типів бухгалтерських документів.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBA7",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OB41",
+    "name": "Ключі проводок",
+    "description": "Налаштування posting keys для дебету/кредиту.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OB41",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OB40",
+    "name": "Автоматичні проводки",
+    "description": "Налаштування автоматичного визначення GL-рахунків.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OB40",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OB13",
+    "name": "Варіант фінансового року",
+    "description": "Налаштування fiscal year variant для company code.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OB13",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBB8",
+    "name": "Терміни оплати",
+    "description": "Налаштування payment terms для AP/AR процесів.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBB8",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBY6",
+    "name": "Глобальні параметри company code",
+    "description": "Підтримка ключових параметрів компанії у FI.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBY6",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBC4",
+    "name": "Field status variant",
+    "description": "Налаштування контролю полів для проводок.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBC4",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBC5",
+    "name": "Призначення field status variant",
+    "description": "Привʼязка field status variant до company code.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBC5",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBD4",
+    "name": "Tolerance groups GL",
+    "description": "Налаштування груп допусків для GL-проводок.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBD4",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBA3",
+    "name": "Tolerance groups customers/vendors",
+    "description": "Налаштування допусків для дебіторів і кредиторів.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBA3",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OBA4",
+    "name": "Tolerance groups employees",
+    "description": "Налаштування допусків для користувачів FI.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OBA4",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "OB57",
+    "name": "Document type control",
+    "description": "Контроль дозволених типів документів за операціями.",
+    "module": "FI Налаштування",
+    "steps": [
+      "Відкрийте транзакцію OB57",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "F-06",
+    "name": "Вихідний платіж",
+    "description": "Класичне проведення вихідного платежу.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-06",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-07",
+    "name": "Кредит-нота постачальнику (класична)",
+    "description": "Класичне введення кредит-ноти постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-07",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-20",
+    "name": "Кредит-нота клієнту (класична)",
+    "description": "Класичне введення кредит-ноти клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-20",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-21",
+    "name": "Рахунок клієнту (класичний)",
+    "description": "Класичне введення дебіторського рахунку.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-21",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-26",
+    "name": "Вхідний платіж (класичний)",
+    "description": "Класична обробка вхідного платежу від клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-26",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-31",
+    "name": "Постинг із очищенням клієнта",
+    "description": "Проводка по клієнту з очищенням відкритих позицій.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-31",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-36",
+    "name": "Запит авансу від клієнта",
+    "description": "Створення запиту на авансовий платіж від клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-36",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-37",
+    "name": "Аванс від клієнта",
+    "description": "Проведення авансового платежу від клієнта.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-37",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-39",
+    "name": "Очищення авансу клієнта",
+    "description": "Зарахування авансу клієнта проти рахунку.",
+    "module": "Дебіторська заборгованість (AR)",
+    "steps": [
+      "Відкрийте транзакцію F-39",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-41",
+    "name": "Кредит-нота постачальника (класична)",
+    "description": "Класичне введення кредит-ноти постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-41",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-51",
+    "name": "Кредит-нота постачальника",
+    "description": "Введення кредит-ноти постачальника у класичному інтерфейсі.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-51",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-59",
+    "name": "Платіж постачальнику з чеком",
+    "description": "Вихідний платіж постачальнику з чековим сценарієм.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-59",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-63",
+    "name": "Паркування рахунку постачальника (класичне)",
+    "description": "Паркування кредиторського рахунку без постингу.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-63",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F-64",
+    "name": "Паркування кредит-ноти постачальника (класичне)",
+    "description": "Паркування кредит-ноти постачальника.",
+    "module": "Кредиторська заборгованість (AP)",
+    "steps": [
+      "Відкрийте транзакцію F-64",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://aboutsapfi.blogspot.com/2013/01/sap-fi-financial-accounting-fi_4709.html"
+  },
+  {
+    "tcode": "F111",
+    "name": "Платежі через payment requests",
+    "description": "Виконання платежів на основі платіжних запитів.",
+    "module": "Платежі (AP/AR)",
+    "steps": [
+      "Відкрийте транзакцію F111",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FCH5",
+    "name": "Створення ручного чека",
+    "description": "Ручне створення чекового документа.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FCH5",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FCH8",
+    "name": "Анулювання чека",
+    "description": "Скасування раніше виданого чека.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FCH8",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FCHN",
+    "name": "Реєстр чеків",
+    "description": "Перегляд і контроль журналу чеків.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FCHN",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FF67",
+    "name": "Ручна банківська виписка",
+    "description": "Введення банківської виписки вручну.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FF67",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FF_5",
+    "name": "Імпорт електронної банківської виписки",
+    "description": "Завантаження EBS файлу в SAP.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FF_5",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FEBAN",
+    "name": "Постобробка банківської виписки",
+    "description": "Обробка непроведених позицій банківської виписки.",
+    "module": "Банківські операції",
+    "steps": [
+      "Відкрийте транзакцію FEBAN",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FBCJ",
+    "name": "Касовий журнал",
+    "description": "Ведення касових операцій через cash journal.",
+    "module": "Каса",
+    "steps": [
+      "Відкрийте транзакцію FBCJ",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FS01",
+    "name": "Створення GL-рахунку (legacy)",
+    "description": "Створення рахунку головної книги у класичному режимі.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FS01",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FS02",
+    "name": "Зміна GL-рахунку (legacy)",
+    "description": "Зміна майстер-даних GL-рахунку у класичному режимі.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FS02",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FS03",
+    "name": "Перегляд GL-рахунку (legacy)",
+    "description": "Перегляд майстер-даних GL-рахунку у класичному режимі.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FS03",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FSP0",
+    "name": "Створення GL у chart of accounts",
+    "description": "Створення GL-рахунку на рівні плану рахунків.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FSP0",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FSP1",
+    "name": "Зміна GL у chart of accounts",
+    "description": "Зміна GL-рахунку на рівні плану рахунків.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FSP1",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FSP2",
+    "name": "Перегляд GL у chart of accounts",
+    "description": "Перегляд GL-рахунку на рівні плану рахунків.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FSP2",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FS11",
+    "name": "Відображення змін GL-рахунку",
+    "description": "Перегляд історії змін у майстер-даних GL-рахунку.",
+    "module": "Головна книга (GL)",
+    "steps": [
+      "Відкрийте транзакцію FS11",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FAGLB03",
+    "name": "Баланс GL (New GL)",
+    "description": "Перегляд балансів рахунків у New General Ledger.",
+    "module": "New GL",
+    "steps": [
+      "Відкрийте транзакцію FAGLB03",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FAGLGVTR",
+    "name": "Carryforward New GL",
+    "description": "Перенесення сальдо New GL на новий фінансовий рік.",
+    "module": "New GL",
+    "steps": [
+      "Відкрийте транзакцію FAGLGVTR",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "FAGL_FCV",
+    "name": "Валютна переоцінка New GL",
+    "description": "Переоцінка валютних позицій у New GL.",
+    "module": "New GL",
+    "steps": [
+      "Відкрийте транзакцію FAGL_FCV",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AS01",
+    "name": "Створення основного засобу",
+    "description": "Створення master data основного засобу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AS01",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AS02",
+    "name": "Зміна основного засобу",
+    "description": "Редагування master data основного засобу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AS02",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AS03",
+    "name": "Перегляд основного засобу",
+    "description": "Перегляд картки основного засобу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AS03",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AW01N",
+    "name": "Asset Explorer",
+    "description": "Аналітичний перегляд значень і рухів по активу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AW01N",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "ABZON",
+    "name": "Надходження ОЗ із постачальника",
+    "description": "Придбання основного засобу з кредиторською проводкою.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію ABZON",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "ABUMN",
+    "name": "Трансфер між ОЗ",
+    "description": "Переміщення вартості між обʼєктами основних засобів.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію ABUMN",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "ABAA",
+    "name": "Незапланована амортизація",
+    "description": "Проведення незапланованої амортизації активу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію ABAA",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "ABAVN",
+    "name": "Вибуття ОЗ без виручки",
+    "description": "Списання основного засобу без надходжень.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію ABAVN",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AFAB",
+    "name": "Прогін амортизації",
+    "description": "Масовий розрахунок і постинг амортизації.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AFAB",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AFAR",
+    "name": "Перерахунок амортизації",
+    "description": "Перерахунок амортизації після змін у master data.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AFAR",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "AB08",
+    "name": "Сторно документа ОЗ",
+    "description": "Сторнування документа по основному засобу.",
+    "module": "Основні засоби (FI-AA)",
+    "steps": [
+      "Відкрийте транзакцію AB08",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XK01",
+    "name": "Створення постачальника (центрально)",
+    "description": "Централізоване створення постачальника на рівні клієнта.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XK01",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XK02",
+    "name": "Зміна постачальника (центрально)",
+    "description": "Централізована зміна даних постачальника.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XK02",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XK03",
+    "name": "Перегляд постачальника (центрально)",
+    "description": "Централізований перегляд даних постачальника.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XK03",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XD01",
+    "name": "Створення клієнта (центрально)",
+    "description": "Централізоване створення клієнта.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XD01",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XD02",
+    "name": "Зміна клієнта (центрально)",
+    "description": "Централізована зміна даних клієнта.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XD02",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "XD03",
+    "name": "Перегляд клієнта (центрально)",
+    "description": "Централізований перегляд даних клієнта.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію XD03",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  },
+  {
+    "tcode": "BP",
+    "name": "Business Partner",
+    "description": "Універсальне ведення бізнес-партнерів у сучасних інсталяціях SAP.",
+    "module": "Master Data",
+    "steps": [
+      "Відкрийте транзакцію BP",
+      "Заповніть ключові поля та параметри",
+      "Перевірте дані перед виконанням",
+      "Збережіть або виконайте операцію"
+    ],
+    "source": "https://www.sapdocs.info/application-modules/fi-co-overview/fi-transaction-codes/"
+  }
+]
